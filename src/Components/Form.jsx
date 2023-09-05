@@ -59,10 +59,10 @@ function Form() {
     }
     if (!values.password) {
       errors.password = 'Password is required';
-    } else if (values.password.length < 4) {
-      errors.password = 'Password must be more than 4 characters';
-    } else if (values.password.length > 10) {
-      errors.password = 'Password cannot exceed more than 10 characters';
+    } else if (values.password.length < 8) {
+      errors.password = 'Password must be more than 8 characters';
+    } else if (values.password.length > 20) {
+      errors.password = 'Password cannot exceed more than 20 characters';
     } else if (!passwordRegex.test(values.password)) {
       errors.password = 'This is not a valid password';
     }
