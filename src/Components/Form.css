@@ -90,8 +90,17 @@
     }
   }
 
+  .successMessageBox {
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
   .successMessage {
     color: white;
+    align-items: center;
+    margin-right: 1rem;
   }
 
   .errorMessage {

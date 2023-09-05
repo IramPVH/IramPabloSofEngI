@@ -99,8 +99,8 @@ function Form() {
     <div>
       <div className="formBox">
         {Object.keys(formErrors).length === 0 && isSubmit ? (
-          <div className="successMessage">
-            Signed in successfully
+          <div className="successMessageBox">
+            <p className="successMessage">Signed in successfully</p>
             <button onClick={handleReturn} className="button" type="submit">
               Go back
             </button>
